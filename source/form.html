@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="index-header__logo-image" src="" width="" height="" alt="Логотип "Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a>Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="cart-list">
+          <li class="cart-list__item">
+            <a class="cart-list__cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+    </header>
+
+    <main class="form-main">
+      <h1 class="form-main__title">Вязание на заказ</h1>
+
+      <section class="form">
+        <h2 class="visually-hidden">Заполните форму заказа</h2>
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form__order-form" method="get" action="https://echo.htmlacademy.ru">
+
+          <fieldset>
+            <legend>Тип</legend>
+            <ul>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="accessory-for-interior" id="filter-accessories">
+                <label for="filter-accessories">Аксессуары для интерьера</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="childrens-toy" id="filter-toy" checked>
+                <label for="filter-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray">
+                <label for="filter-gray">Серый</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
+                <label for="filter-tiffany">"Тиффани"</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="black" id="filter-black">
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="orange" id="filter-orange">
+                <label for="filter-orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>ФИО</legend>
+            <ul>
+              <li class="form__option">
+                <label for="filter-name">Имя:</label>
+                <input class="form__input form__input--text" type="text" name="name" id="filter-name" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="form__option">
+                <label for="filter-surname">Фамилия:</label>
+                <input class="form__input form__input--text" type="text" name="surname" id="filter-surname" placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="form__option">
+                <label for="filter-patronymic">Отчество:</label>
+                <input class="form__input form__input--text" type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тел</legend>
+            <ul>
+              <li class="form__option">
+                <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>E-mail</legend>
+            <ul>
+              <li class="form__option">
+                <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Доп</legend>
+            <ul>
+              <li class="form__option">
+                <textarea class="form__input form__input--textarea" name="info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </li>
+            </ul>
+          </fieldset>
+
+          <small class="form__required"><sup>*</sup>Поля обязательны для заполнения</small>
+          <button class="button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="" width="" height="" alt="Логотип "Мишка">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#"><span class="visually-hidden">Сайт HTML Academy</span></a>
+      </div>
+    </footer>
+
+  </body>
+</html>
