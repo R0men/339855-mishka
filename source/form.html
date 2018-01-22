@@ -48,11 +48,11 @@
             <ul>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="accessory-for-interior" id="filter-accessories">
-                <label for="filter-accessories">Аксессуары для интерьера</label>
+                <label class="form__label" for="filter-accessories">Аксессуары для интерьера</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="childrens-toy" id="filter-toy" checked>
-                <label for="filter-toy">Детская игрушка</label>
+                <label class="form__label" for="filter-toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
@@ -62,27 +62,27 @@
             <ul>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="filter-white">
-                <label for="filter-white">Белый</label>
+                <label class="form__label" for="filter-white">Белый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray">
-                <label for="filter-gray">Серый</label>
+                <label class="form__label" for="filter-gray">Серый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
-                <label for="filter-tiffany">"Тиффани"</label>
+                <label class="form__label" for="filter-tiffany">"Тиффани"</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="black" id="filter-black">
-                <label for="filter-black">Черный</label>
+                <label class="form__label" for="filter-black">Черный</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="pink" id="filter-pink">
-                <label for="filter-pink">Розовый</label>
+                <label class="form__label" for="filter-pink">Розовый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="orange" id="filter-orange">
-                <label for="filter-orange">Оранжевый</label>
+                <label class="form__label" for="filter-orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
@@ -91,15 +91,15 @@
             <legend>ФИО</legend>
             <ul>
               <li class="form__option">
-                <label for="filter-name">Имя:</label>
+                <label class="form__label" for="filter-name">Имя:</label>
                 <input class="form__input form__input--text" type="text" name="name" id="filter-name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="form__option">
-                <label for="filter-surname">Фамилия:</label>
+                <label class="form__label" for="filter-surname">Фамилия:</label>
                 <input class="form__input form__input--text" type="text" name="surname" id="filter-surname" placeholder="Укажите фамилию*" required>
               </li>
               <li class="form__option">
-                <label for="filter-patronymic">Отчество:</label>
+                <label class="form__label" for="filter-patronymic">Отчество:</label>
                 <input class="form__input form__input--text" type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
@@ -107,29 +107,14 @@
 
           <fieldset>
             <legend>Тел</legend>
-            <ul>
-              <li class="form__option">
-                <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
+            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
             <legend>E-mail</legend>
-            <ul>
-              <li class="form__option">
-                <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*" required>
-              </li>
-            </ul>
+            <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*" required>
           </fieldset>
 
           <fieldset>
             <legend>Доп</legend>
-            <ul>
-              <li class="form__option">
-                <textarea class="form__input form__input--textarea" name="info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </li>
-            </ul>
+            <textarea class="form__input form__input--textarea" name="info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
 
           <small class="form__required"><sup>*</sup>Поля обязательны для заполнения</small>
@@ -141,7 +126,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="" width="" height="" alt="Логотип "Мишка">
+        <a class="page-footer__logo-link" href="#">
+          <img src="" width="" height="" alt="Логотип "Мишка">
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -158,7 +145,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="#"><span class="visually-hidden">Сайт HTML Academy</span></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Academy</span></a>
       </div>
     </footer>
 
