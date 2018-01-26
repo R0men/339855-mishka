@@ -1,0 +1,19 @@
+.advantages {
+  @include indent;
+}
+
+.advantages__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  @include marpad;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  list-style: none;
+}

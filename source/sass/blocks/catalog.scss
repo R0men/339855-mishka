@@ -1,0 +1,9 @@
+.catalog__list {
+  @include marpad;
+
+  list-style: none;
+}
+
+.catalog__article {
+    @include indent;
+}

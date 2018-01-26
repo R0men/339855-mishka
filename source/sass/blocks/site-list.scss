@@ -1,0 +1,15 @@
+.site-list {
+  @include marpad;
+
+  list-style: none;
+}
+
+.site-list__item {
+}
+
+.site-list__item-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}

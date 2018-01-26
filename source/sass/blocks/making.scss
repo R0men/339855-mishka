@@ -1,0 +1,27 @@
+.making {
+  @include indent;
+}
+
+.making__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.making__description {
+  @include marpad;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.making__video {
+  @include marpad;
+}
+
+.making__order {
+  font-size: 17px;
+  line-height: 17px;
+}

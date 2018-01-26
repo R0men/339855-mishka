@@ -1,0 +1,32 @@
+.reviews {
+  @include indent;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.reviews__text {
+  @include marpad;
+
+  color: #444444;
+}
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__link {
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__add {
+  font-size: 18px;
+}
