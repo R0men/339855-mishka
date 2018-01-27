@@ -11,7 +11,7 @@
 .reviews__text {
   @include marpad;
 
-  color: #444444;
+  color: $gray--dark;
 }
 
 .reviews__author {
@@ -24,7 +24,7 @@
 .reviews__link {
   font-size: 17px;
   line-height: 30px;
-  color: #444444;
+  color: $gray--dark;
 }
 
 .reviews__add {

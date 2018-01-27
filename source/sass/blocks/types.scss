@@ -4,10 +4,6 @@
   list-style: none;
 }
 
-.types__item {
-
-}
-
 .types__link {
   padding-top: 31px;
   padding-bottom: 36px;
@@ -22,6 +18,5 @@
 }
 
 .types__link--toys {
-  background-color: #56c3b2;
+  background-color: $green--darken;
 }
-
