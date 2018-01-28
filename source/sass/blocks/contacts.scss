@@ -1,0 +1,12 @@
+.contacts {
+  @include indent;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__items {
+  color: $gray--dark;
+}

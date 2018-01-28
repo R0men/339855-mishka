@@ -1,0 +1,25 @@
+.add-to-cart__title {
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.add-to-cart__description {
+  text-align: center;
+  color: $gray--dark;
+}
+
+.add-to-cart__list {
+  @include marpad;
+}
+
+.add-to-cart__add {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: $green;
+  border: none;
+}

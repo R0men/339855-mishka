@@ -1,0 +1,12 @@
+.cart-list {
+  @include marpad;
+
+  list-style: none;
+}
+
+.cart-list__item-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}

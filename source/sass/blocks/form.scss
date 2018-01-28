@@ -1,0 +1,50 @@
+.form {
+  @include indent;
+}
+
+.form__description {
+  @include marpad;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $gray--dark;
+}
+
+.form__field {
+  @include marpad;
+
+  border: none;
+}
+
+.form__field-title {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include marpad;
+
+  list-style: none;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $gray--dark;
+}
+
+.form__button {
+  font-size: 17px;
+  line-height: 17px;
+}
