@@ -1,6 +1,7 @@
 .contacts__wrapper {
   width: 260px;
   margin: 0 auto;
+
   @include indent;
 }
 
@@ -23,6 +24,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     width: 668px;
+
     @include indent-tablet;
   }
 
@@ -38,6 +40,7 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 1050px;
+
     @include indent-desktop;
   }
 }

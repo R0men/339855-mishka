@@ -1,5 +1,6 @@
 .weekly {
   width: 260px;
+
   @include indent;
   margin: 0 auto;
 }
@@ -73,6 +74,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     min-width: 668px;
+
     @include indent-tablet;
   }
 
@@ -152,6 +154,7 @@
 @media (min-width: $desktop-width) {
   .weekly {
     min-width: 1050px;
+
     @include indent-desktop;
   }
 

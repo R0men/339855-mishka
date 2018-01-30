@@ -1,6 +1,7 @@
 .reviews {
   width: 260px;
   margin: 0 auto;
+
   @include indent;
 }
 
@@ -63,6 +64,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: 668px;
+
     @include indent-tablet;
     padding-top: 90px;
     padding-bottom: 68px;
@@ -130,11 +132,10 @@
 }
 
 /*Для десктопов*/
-
 @media (min-width: $desktop-width) {
-
   .reviews {
     width: 1050px;
+
     @include indent-desktop;
     padding-top: 88px;
     padding-bottom: 102px;

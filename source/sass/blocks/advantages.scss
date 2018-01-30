@@ -1,6 +1,7 @@
 .advantages {
   width: 260px;
   margin: 0 auto;
+
   @include indent;
 }
 
@@ -38,6 +39,7 @@
   .advantages {
     width: auto;
     max-width: 1400px;
+
     @include indent-tablet;
   }
 
