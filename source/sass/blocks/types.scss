@@ -1,3 +1,8 @@
+.types {
+  max-width: 1920px;
+  margin-bottom: 35px;
+}
+
 .types__list {
   @include marpad;
 
@@ -20,3 +25,47 @@
 .types__link--toys {
   background-color: $green--darken;
 }
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .types {
+    @include indent-tablet;
+    margin-bottom: 60px;
+  }
+
+  .types__list {
+    display: flex;
+  }
+
+  .types__item {
+    width: 50%;
+  }
+
+  .types__link {
+    padding: 34px;
+    padding-left: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .types {
+    @include indent-desktop;
+    margin: 0 auto;
+    margin-bottom: 138px;
+  }
+
+  .types__link {
+    padding: 33px;
+    padding-left: 37px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+

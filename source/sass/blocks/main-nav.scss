@@ -1,5 +1,43 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 40px;
+  right: 19px;
+
+  background-color: #000000;
+}
+
 .main-nav__list {
   @include marpad;
 
   list-style: none;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    order: 3;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    order: 1;
+  }
+
+  .main-nav__list {
+    width: 481px;
+  }
 }

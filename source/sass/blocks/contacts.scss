@@ -1,4 +1,6 @@
-.contacts {
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
   @include indent;
 }
 
@@ -9,4 +11,33 @@
 
 .contacts__items {
   color: $gray--dark;
+}
+
+.contacts__message {
+  display: block;
+  margin-bottom: 40px;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 668px;
+    @include indent-tablet;
+  }
+
+  .contacts__message {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 1050px;
+    @include indent-desktop;
+  }
 }

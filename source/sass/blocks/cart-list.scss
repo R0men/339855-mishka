@@ -4,9 +4,71 @@
   list-style: none;
 }
 
+.cart-list__item {
+  padding: 22px 0;
+  padding-left: 75px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #ececec;
+}
+
 .cart-list__item-link {
+  display: block;
+
+  text-align: left;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .cart-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
+  .cart-list__item {
+    padding: 0;
+  }
+
+  .cart-list__item--search {
+    width: 84px;
+    height: 88px;
+
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .cart-list__item--cart {
+    padding-left: 82px;
+    padding-right: 50px;
+  }
+
+  .cart-list__item-link {
+    margin-top: 32px;
+  }
+
+  .cart-list__item-link--search {
+    font-size: 0;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .cart-list {
+    order: 3;
+    flex-grow: 1;
+    align-self: flex-start;
+  }
+
+  .cart-list__item--cart {
+    height: 88px;
+  }
 }

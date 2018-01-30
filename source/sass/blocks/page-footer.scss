@@ -1,3 +1,39 @@
 .page-footer {
   background-color: $gray;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    min-height: 143px;
+    margin: 0 auto;
+    @include indent-tablet;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 33.3%;
+    margin: auto 0;
+  }
+
+  .page-footer__logo-link {
+    display: flex;
+    margin: auto 0;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include indent-desktop;
+  }
+}

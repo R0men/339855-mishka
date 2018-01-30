@@ -4,5 +4,13 @@
 }
 
 @mixin indent {
-  margin: 0 30px;
+  padding: 0 30px;
+}
+
+@mixin indent-tablet {
+  padding: 0 50px;
+}
+
+@mixin indent-desktop {
+  padding: 0 100px;
 }
