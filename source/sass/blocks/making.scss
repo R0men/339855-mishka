@@ -1,8 +1,32 @@
 .making {
-  @include indent;
+  @include mobile;
+  margin-bottom: 60px;
+}
+
+.making__wrapper {
+  border: 1px solid #ececec;
+}
+
+.making__video {
+  position: relative;
+  z-index: -10;
+
+  @include marpad;
+  margin-bottom: 30px;
+  padding-top: 96px;
+}
+
+.making__video img {
+  display: block;
 }
 
 .making__title {
+  margin: 0;
+  margin-top: -276px;
+  margin-bottom: 176px;
+  padding: 24px 0;
+  padding-left: 90px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -10,6 +34,8 @@
 
 .making__description {
   @include marpad;
+  padding: 0 34px;
+  padding-bottom: 34px;
 
   font-size: 13px;
   line-height: 24px;
@@ -17,11 +43,107 @@
   color: $gray--dark;
 }
 
-.making__video {
-  @include marpad;
-}
-
 .making__order {
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+
   font-size: 17px;
   line-height: 17px;
+}
+
+.making__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .making {
+    @include tablet;
+    margin-bottom: 63px;
+  }
+
+  .making__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+  .making__video {
+    margin-bottom: 44px;
+    padding-top: 0;
+  }
+
+  .making__video img {
+    width: 100%;
+    height: 455px;
+  }
+
+  .making__title {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    padding-left: 105px;
+    padding-right: 50px;
+
+    font-size: 20px;
+  }
+
+  .making__description {
+    padding-left: 40px;
+    padding-right: 44px;
+    padding-bottom: 37px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .making__order {
+    width: 584px;
+    margin-bottom: 46px;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .making {
+    @include desktop;
+    margin-bottom: 105px;
+  }
+
+  .making__wrapper {
+    flex-direction: row;
+  }
+
+  .making__video {
+    width: 682px;
+    margin-bottom: 0;
+  }
+
+  .making__description-wrapper {
+    width: 260px;
+    margin-top: 102px;
+    margin-left: 80px;
+  }
+
+  .making__title {
+    width: 200px;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .making__description {
+    padding: 0;
+    padding-bottom: 47px;
+  }
+
+  .making__order {
+    width: 230px;
+    margin: 0;
+  }
+
 }

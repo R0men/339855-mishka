@@ -27,7 +27,12 @@
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {
+  .social {
+    width: 33.3%;
+  }
+
   .social__list {
+    width: auto;
     height: 100%;
     margin: auto 0;
 

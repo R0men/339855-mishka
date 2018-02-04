@@ -10,7 +10,7 @@
 .index-main__title {
   width: 250px;
   margin: 0 auto;
-  margin-bottom: 126px;
+  padding-bottom: 126px;
   padding-top: 80px;
 
   font-size: 27px;
@@ -30,7 +30,7 @@
 
   .index-main__title {
     width: 510px;
-    margin-bottom: 385px;
+    padding-bottom: 385px;
     padding-top: 170px;
 
     font-size: 43px;
@@ -41,13 +41,13 @@
 /*Для десктопов*/
 
 @media (min-width: $desktop-width) {
-  .index-main {
+  .index-main__wrapper {
     margin-top: -88px;
   }
 
   .index-main__title {
     width: 650px;
-    margin-bottom: 370px;
+    padding-bottom: 370px;
 
     font-size: 53px;
     line-height: 57px;

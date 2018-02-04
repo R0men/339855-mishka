@@ -1,8 +1,5 @@
 .weekly {
-  width: 260px;
-
-  @include indent;
-  margin: 0 auto;
+  @include mobile;
 }
 
 .weekly__title-item {
@@ -40,12 +37,30 @@
   font-size: 15px;
   line-height: 20px;
   color: $gray--dark;
+
+  border-collapse: collapse;
+}
+
+.weekly__stats tr {
+  height: 40px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.weekly__field {
+  width: 80px;
+  padding: 0;
+  padding-right: 18px;
+}
+
+.weekly__value {
+  padding: 0;
 }
 
 .weekly__image {
   @include marpad;
   margin-bottom: 28px;
-
+  /*Временно*/
   background-color: $gray;
 }
 
@@ -73,9 +88,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    min-width: 668px;
 
-    @include indent-tablet;
+    @include tablet;
   }
 
   .weekly__title-wrapper {
@@ -110,9 +124,12 @@
 
   .weekly__description-wrapper {
     width: 270px;
+    margin-bottom: 20px;
   }
 
   .weekly__description {
+    margin-bottom: 50px;
+
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
@@ -153,9 +170,7 @@
 
 @media (min-width: $desktop-width) {
   .weekly {
-    min-width: 1050px;
-
-    @include indent-desktop;
+    @include desktop;
   }
 
   .weekly__title-wrapper {

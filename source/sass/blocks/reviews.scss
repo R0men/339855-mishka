@@ -1,8 +1,5 @@
 .reviews {
-  width: 260px;
-  margin: 0 auto;
-
-  @include indent;
+  @include mobile;
 }
 
 .reviews__title {
@@ -63,9 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: 668px;
-
-    @include indent-tablet;
+    @include tablet;
     padding-top: 90px;
     padding-bottom: 68px;
 
@@ -76,11 +71,13 @@
   }
 
   .reviews__wrapper {
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .reviews__title {
-    max-width: 450px;
+    order: -2;
+    max-width: 400px;
     margin-bottom: 58px;
 
     font-size: 43px;
@@ -88,11 +85,15 @@
   }
 
   .reviews__item {
+    display: flex;
+    flex-direction: column;
     width: 668px;
     margin: 0;
   }
 
   .reviews__text {
+    margin-bottom: 65px;
+
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
@@ -107,11 +108,9 @@
   }
 
   .reviews__controls {
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-
     margin: 0;
+    margin-left: auto;
+    margin-top: -50px;
   }
 
   .reviews__prev,
@@ -120,11 +119,12 @@
   }
 
   .reviews__add {
-    position: absolute;
-    top: 0;
-    right: 50px;
+    order: -1;
+    width: 95px;
+    margin-left: auto;
+    margin-top: -108px;
+    margin-bottom: 50px;
 
-    display: block;
     padding: 17px 40px;
 
     font-size: 17px;
@@ -134,9 +134,7 @@
 /*Для десктопов*/
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 1050px;
-
-    @include indent-desktop;
+    @include desktop;
     padding-top: 88px;
     padding-bottom: 102px;
 
@@ -151,7 +149,12 @@
   }
 
   .reviews__item {
+    width: 760px;
     margin-left: 175px;
+  }
+
+  .reviews__text {
+    margin-bottom: 17px;
   }
 
   .reviews__author {
@@ -159,11 +162,6 @@
   }
 
   .reviews__controls {
-    right: 100px;
-  }
-
-  .reviews__add {
-    top: 0;
     right: 100px;
   }
 }

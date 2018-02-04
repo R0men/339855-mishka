@@ -1,14 +1,16 @@
 .copyright {
   display: flex;
-  justify-content: center;
+
   min-height: 80px;
 }
 
 .copyright__text {
   margin: auto 0;
+  margin-left: auto;
   margin-right: 30px;
 
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 19px;
 }
 
 .copyright__link {
@@ -23,5 +25,3 @@
     width: 33.3%;
   }
 }
-
-/*Для десктопов*/
