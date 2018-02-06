@@ -123,24 +123,23 @@
   }
 
   .weekly__description-wrapper {
-    width: 270px;
+    width: 295px;
     margin-bottom: 20px;
   }
 
   .weekly__description {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 
     font-size: 17px;
     line-height: 30px;
-    font-weight: 700;
   }
 
   .weekly__stats {
     margin: 0;
+    margin-bottom: 20px;
 
     font-size: 17px;
     line-height: 30px;
-    font-weight: 700;
   }
 
   .weekly__image {
@@ -153,12 +152,12 @@
     display: flex;
     flex-direction: column;
     width: 270px;
-    margin-top: -114px;
+    margin-top: -106px;
   }
 
   .weekly__price {
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .weekly__order {

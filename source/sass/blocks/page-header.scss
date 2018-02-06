@@ -15,12 +15,6 @@
   padding: 22px 0;
 }
 
-.page-header__list {
-  @include marpad;
-
-  list-style: none;
-}
-
 .page-header__delivery {
   display: none;
 
@@ -30,7 +24,6 @@
 
   font-size: 15px;
   line-height: 24px;
-  font-weight: 700;
   color: $gray--dark;
 }
 
@@ -40,31 +33,27 @@
   .page-header {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
+
+    @include tablet;
   }
 
   .page-header__logo {
-    width: 115px;
-    height: 88px;
-    padding-left: 50px;
-    padding-right: 203px;
+    margin-right: auto;
+
+    border: none;
   }
 
   .page-header__logo-image {
+    width: 115px;
+    height: 88px;
     margin: 0;
-  }
-
-  .page-header__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
+    padding: 0;
   }
 
   .page-header__delivery {
     display: block;
     order: 4;
     margin-left: auto;
-    margin-right: 50px;
     padding-left: 0;
   }
 }
@@ -73,24 +62,24 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1150px;
-    padding: 0 50px;
+    width: $desktop-width;
+    padding: 0;
   }
 
   .page-header__logo {
     order: 2;
-    padding-right: 100px;
-    padding-left: 10px;
+    flex-grow: 1;
+
+    border-bottom: 1px solid #ececec;
   }
 
-  .page-header__list {
-    order: 3;
-    flex-grow: 1;
-    align-self: flex-start;
+  .page-header__logo-image {
+    padding-left: 30px;
   }
 
   .page-header__delivery {
     margin-top: -80px;
     margin-left: auto;
+    padding-right: 50px;
   }
 }
