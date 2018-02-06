@@ -2,18 +2,7 @@
   @include mobile;
 }
 
-.form__description {
-  @include marpad;
-
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $gray--dark;
-}
-
 .form__field {
-  position: relative;
-
   @include marpad;
   margin-bottom: 50px;
 
@@ -31,7 +20,6 @@
 .form__field--phone {
   display: flex;
   flex-direction: column;
-
   margin-bottom: 34px;
 }
 
@@ -39,8 +27,20 @@
   margin-bottom: 18px;
 }
 
+.form__field-wrapper {
+  position: relative;
+}
+
+.form__description {
+  @include marpad;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $gray--dark;
+}
+
 .form__field-title {
-  margin-bottom: 43px;
+  height: 100%;
 
   font-size: 17px;
   line-height: 17px;
@@ -61,37 +61,18 @@
   }
 }
 
-.form__field-title--name {
-  margin-bottom: 34px;
-}
-
-.form__field-title--phone {
-  margin-bottom: 10px;
-}
-
 .form__field-title--email {
-  margin-bottom: 10px;
-
   &::after {
-    top: 129.5px;
     left: 80px;
 
     width: 180px;
   }
 }
 
-.form__field-title--info {
-  margin-bottom: 28px;
-}
-
 .form__list {
   @include marpad;
 
   list-style: none;
-}
-
-.form__option--checkbox {
-  padding-left: 62px;
 }
 
 .form__option--radio {
@@ -105,6 +86,7 @@
 
 .form__option--checkbox {
   margin-bottom: 52px;
+  padding-left: 62px;
 
   &:last-child {
     margin-bottom: 0;
@@ -236,6 +218,28 @@
   line-height: 17px;
 }
 
+@media (max-width: $tablet-width - 1px) {
+  .form__field-title {
+    margin-bottom: 43px;
+  }
+
+  .form__field-title--name {
+    margin-bottom: 34px;
+  }
+
+  .form__field-title--phone {
+    margin-bottom: 10px;
+  }
+
+  .form__field-title--email {
+    margin-bottom: 10px;
+  }
+
+  .form__field-title--info {
+    margin-bottom: 28px;
+  }
+}
+
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {
@@ -246,14 +250,6 @@
 
   .form__order-form {
     width: 100%;
-  }
-
-  .form__description {
-    @include indent-tablet;
-    margin-bottom: 76px;
-
-    font-size: 17px;
-    line-height: 30px;
   }
 
   .form__field {
@@ -285,17 +281,28 @@
   }
 
   .form__field--info {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
+  }
+
+  .form__description {
+    margin-bottom: 76px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form__field-wrapper {
     display: flex;
   }
 
+  .form__field-wrapper--info {
+    margin-bottom: 53px;
+  }
+
   .form__field-title {
     width: 165px;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -400,9 +407,6 @@
 
   .form__button-wrapper {
     display: flex;
-
-    @include indent-tablet;
-    margin-bottom: 50px;
   }
 
   .form__required {
@@ -424,12 +428,11 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    width: $desktop-width;
+    width: auto;
   }
 
-  .form__description {
-    padding: 0 226px;
-    margin-bottom: 79px;
+  .form__wrapper-bg {
+    background-color: $gray;
   }
 
   .form__field {
@@ -437,7 +440,24 @@
     padding-right: 110px;
   }
 
+  .form__field--type,
+  .form__field--color,
+  .form__field--name,
+  .form__field--phone,
   .form__field--info {
+    width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__description {
+    width: 685px;
+    margin-bottom: 79px;
+    padding: 0;
+    padding-left: 110px;
+  }
+
+  .form__field-wrapper--info {
     margin-bottom: 48px;
   }
 
@@ -481,7 +501,6 @@
 
   .form__button-wrapper {
     width: 704px;
-    padding: 0;
-    padding-left: 220px;
+    padding-left: 110px;
   }
 }

@@ -35,7 +35,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: auto;
-    max-width: 1400px;
+    max-width: 1050px;
 
     @include indent-tablet;
   }
@@ -60,7 +60,6 @@
     width: auto;
     padding-top: 115px;
     padding-right: 10%;
-
   }
 
   .advantages__item-wrapper {

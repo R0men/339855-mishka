@@ -9,10 +9,10 @@
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1920px;
+    max-width: 1050px;
     min-height: 143px;
     margin: 0 auto;
 
@@ -34,7 +34,7 @@
 /*Для десктопов*/
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
     @include indent-desktop;
   }
 }
