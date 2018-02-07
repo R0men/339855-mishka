@@ -5,16 +5,27 @@
   min-height: 80px;
 }
 
-.copyright__text {
+.copyright__link {
+  display: flex;
   margin: auto 0;
 
   font-size: 19px;
   line-height: 19px;
+  color: #000000;
+
+  &:hover svg path {
+    fill: $green--hover;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link {
-  display: flex;
-  margin: auto 0;
+.copyright__text {
+  align-self: center;
+  padding-right: 30px;
 }
 
 /*Для планшетов*/
@@ -24,8 +35,7 @@
     width: 33.3%;
   }
 
-  .copyright__text {
+  .copyright__link {
     margin-left: auto;
-    margin-right: 30px;
   }
 }

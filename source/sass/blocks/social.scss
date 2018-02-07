@@ -22,6 +22,15 @@
 
 .social__link {
   display: flex;
+
+  &:hover svg path {
+    fill: $green--hover;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 /*Для планшетов*/
