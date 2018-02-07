@@ -1,12 +1,161 @@
-.contacts {
-  @include indent;
+.contacts__wrapper {
+  @include mobile;
 }
 
 .contacts__title {
+  margin: 0;
+  margin-bottom: 35px;
+
   font-size: 18px;
   line-height: 30px;
 }
 
 .contacts__items {
+  width: 100%;
+  margin-bottom: 38px;
+
   color: $gray--dark;
+
+  border-collapse: collapse;
+}
+
+.contacts__field {
+  width: 60px;
+  padding: 0;
+  padding-right: 16px;
+
+  vertical-align: top;
+
+  &:first-child {
+    padding-bottom: 27px;
+  }
+}
+
+.contacts__value {
+  width: 184px;
+  padding: 0;
+
+  vertical-align: top;
+
+  &:first-child {
+    padding-bottom: 27px;
+  }
+}
+
+.contacts iframe {
+  display: block;
+  width: 100%;
+  min-height: 457px;
+  margin-bottom: 40px;
+}
+
+.contacts__message {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    @include tablet;
+  }
+
+  .contacts__title {
+    margin-bottom: 60px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__items {
+    margin-bottom: 27px;
+
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .contacts__items tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__items tr {
+    width: 50%;
+  }
+
+  .contacts__field {
+    &:first-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .contacts__value {
+    padding-right: 16px;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .contacts iframe {
+    margin-bottom: 55px;
+  }
+
+  .contacts__message {
+    width: 230px;
+    margin-bottom: 58px;
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 106px;
+
+    @include desktop;
+  }
+
+  .contacts__wrapper {
+    width: 350px;
+
+    @include marpad;
+    margin-left: 175px;
+  }
+
+  .contacts__title {
+    margin-top: 88px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__items tbody {
+    flex-direction: column;
+  }
+
+  .contacts__items tr {
+    width: 100%;
+  }
+
+  .contacts iframe {
+    width: 525px;
+    margin: 0;
+  }
+
+  .contacts__message {
+    position: absolute;
+    left: 275px;
+    bottom: 0;
+
+    margin: 0;
+  }
 }

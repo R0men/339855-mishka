@@ -1,3 +1,49 @@
 .page-footer {
   background-color: $gray;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+/*Для планшетов*/
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1050px;
+    min-height: 143px;
+    margin: 0 auto;
+
+    @include indent-tablet;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 33.3%;
+    margin: auto 0;
+  }
+
+  .page-footer__logo-link {
+    display: flex;
+    margin: auto 0;
+
+    &:hover svg path {
+      fill: $green--hover;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+}
+
+/*Для десктопов*/
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    @include indent-desktop;
+  }
+}

@@ -4,5 +4,29 @@
 }
 
 @mixin indent {
-  margin: 0 30px;
+  padding: 0 30px;
+}
+
+@mixin indent-tablet {
+  padding: 0 50px;
+}
+
+@mixin indent-desktop {
+  padding: 0 50px;
+}
+
+@mixin mobile {
+  padding: 0 30px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+@mixin tablet {
+  padding: 0 50px;
+  width: 668px;
+}
+
+@mixin desktop {
+  padding: 0 50px;
+  width: 1050px;
 }
