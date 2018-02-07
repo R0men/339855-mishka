@@ -13,6 +13,11 @@
   border-bottom: 1px solid $border;
 }
 
+.cart-list__item--cart,
+.cart-list__item--search {
+  position: relative;
+}
+
 .cart-list__item-link {
   display: block;
 
@@ -22,6 +27,25 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:hover svg path {
+    fill: $green;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.cart-list__item-link svg {
+  position: absolute;
+  left: 30px;
+  top: 25px;
 }
 
 /*Для планшетов*/
@@ -56,6 +80,11 @@
   .cart-list__item-link--search {
     font-size: 0;
   }
+
+  .cart-list__item-link svg {
+  left: 33px;
+  top: 35px;
+}
 }
 
 /*Для десктопов*/
