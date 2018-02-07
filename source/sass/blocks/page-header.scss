@@ -6,7 +6,7 @@
 }
 
 .page-header__logo {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $border;
 }
 
 .page-header__logo-image {
@@ -71,7 +71,7 @@
     flex-grow: 1;
     height: 100%;
 
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $border;
   }
 
   .page-header__logo-image {

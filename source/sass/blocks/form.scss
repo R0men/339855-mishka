@@ -205,7 +205,6 @@
 
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
   color: $gray--dark;
   white-space: nowrap;
 }
@@ -436,8 +435,8 @@
   }
 
   .form__field {
+    padding-right: 0;
     padding-left: 110px;
-    padding-right: 110px;
   }
 
   .form__field--type,
@@ -445,7 +444,7 @@
   .form__field--name,
   .form__field--phone,
   .form__field--info {
-    width: $desktop-width;
+    width: $desktop-width - 110px;
     margin-left: auto;
     margin-right: auto;
   }

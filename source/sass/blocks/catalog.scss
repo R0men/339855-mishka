@@ -10,7 +10,7 @@
 }
 
 .catalog__item {
-  border: 1px solid #ececec;
+  border: 1px solid $border;
 }
 
 @media (max-width: $tablet-width - 1px) {
