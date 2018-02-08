@@ -119,6 +119,7 @@
 
   font-size: 17px;
   line-height: 18px;
+  color: $gray--dark;
 }
 
 .form__input--radio + .form__label::before {
@@ -132,6 +133,15 @@
 
   border: 2px solid $gray--dark;
   border-radius: 50%;
+}
+
+.form__input--radio:hover + .form__label::before {
+  border-color: $green;
+}
+
+.form__input--radio:active + .form__label::before,
+.form__input--radio:focus + .form__label::before {
+  border-color: $input--gray;
 }
 
 .form__input--radio:checked + .form__label::after {
@@ -159,11 +169,26 @@
   border: 2px solid $gray--dark;
 }
 
+.form__input--checkbox:hover + .form__label::before {
+  border-color: $green;
+}
+
+.form__input--checkbox:active + .form__label::before,
+.form__input--checkbox:focus + .form__label::before {
+  border-color: $input--gray;
+}
+
 .form__input--text {
   padding: 20px 0;
 
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $green;
+  }
 
   &::placeholder {
     color: $placeholder;
@@ -177,6 +202,12 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $green;
+  }
 
   &::placeholder {
     color: $placeholder;
@@ -193,6 +224,12 @@
   padding: 20px 16px;
 
   border: 2px solid $gray--dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $green;
+  }
 
   &::placeholder {
     color: $placeholder;

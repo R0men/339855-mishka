@@ -27,7 +27,9 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
 
+.site-list__item-link[href] {
   &:hover {
     opacity: 0.6;
   }

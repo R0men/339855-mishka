@@ -42,6 +42,20 @@
   }
 }
 
+.contacts__email-link {
+  color: $gray--dark;
+  border-bottom: 1px solid $green;
+
+  &:hover {
+    color: $green--hover;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 .contacts iframe {
   display: block;
   width: 100%;
@@ -74,7 +88,6 @@
     margin-bottom: 27px;
 
     font-size: 17px;
-    font-weight: 700;
   }
 
   .contacts__items tbody {

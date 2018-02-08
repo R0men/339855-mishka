@@ -20,6 +20,16 @@
   font-weight: 700;
   color: #ffffff;
   background-color: $green;
+
+  &:hover {
+    padding-top: 26px;
+    padding-bottom: 46px;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .types__link--toys {
@@ -66,5 +76,10 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      padding-top: 28px;
+      padding-bottom: 43px;
+    }
   }
 }
