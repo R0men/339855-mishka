@@ -81,6 +81,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
+    position: relative;
+
     @include tablet;
   }
 
@@ -90,6 +92,29 @@
 
     font-size: 43px;
     line-height: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 49px;
+      top: 50px;
+
+      border-left: 40px solid $green;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 94px;
+      top: 45px;
+
+      width: 4px;
+      height: 81px;
+
+      background-color: #000000;
+    }
   }
 
   .contacts__items {
@@ -162,6 +187,16 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      top: 64px;
+      right: 410px;
+    }
+
+    &::after {
+      top: 60px;
+      right: 453px;
+    }
   }
 
   .contacts__items tbody {
