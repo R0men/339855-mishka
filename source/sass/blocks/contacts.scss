@@ -4,7 +4,8 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  padding-top: 36px;
 
   font-size: 18px;
   line-height: 30px;
@@ -27,7 +28,7 @@
   vertical-align: top;
 
   &:first-child {
-    padding-bottom: 27px;
+    padding-bottom: 30px;
   }
 }
 
@@ -39,6 +40,23 @@
 
   &:first-child {
     padding-bottom: 27px;
+  }
+}
+
+.contacts__email-link {
+  padding-bottom: 4px;
+
+  color: $gray--dark;
+
+  border-bottom: 1px solid $green;
+
+  &:hover {
+    color: $green--hover;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -54,27 +72,55 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 20px;
 }
 
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
+    position: relative;
+
     @include tablet;
   }
 
   .contacts__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    padding-top: 60px;
 
     font-size: 43px;
     line-height: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 49px;
+      top: 50px;
+
+      border-left: 40px solid $green;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 94px;
+      top: 45px;
+
+      width: 4px;
+      height: 81px;
+
+      background-color: #000000;
+    }
   }
 
   .contacts__items {
     margin-bottom: 27px;
 
     font-size: 17px;
-    font-weight: 700;
   }
 
   .contacts__items tbody {
@@ -93,6 +139,7 @@
   }
 
   .contacts__value {
+    width: auto;
     padding-right: 16px;
 
     &:first-child {
@@ -107,6 +154,10 @@
   .contacts__message {
     width: 230px;
     margin-bottom: 58px;
+  }
+
+  .contacts__br--mobile {
+    display: none;
   }
 }
 
@@ -132,10 +183,20 @@
   }
 
   .contacts__title {
-    margin-top: 88px;
+    margin-top: 10px;
 
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      top: 64px;
+      right: 410px;
+    }
+
+    &::after {
+      top: 60px;
+      right: 453px;
+    }
   }
 
   .contacts__items tbody {
@@ -146,6 +207,12 @@
     width: 100%;
   }
 
+  .contacts__field {
+    &:first-child {
+      padding-bottom: 30px;
+    }
+  }
+
   .contacts iframe {
     width: 525px;
     margin: 0;
@@ -153,7 +220,7 @@
 
   .contacts__message {
     position: absolute;
-    left: 275px;
+    left: 229px;
     bottom: 0;
 
     margin: 0;
