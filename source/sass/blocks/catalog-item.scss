@@ -1,6 +1,6 @@
 .catalog-item__image {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   background-color: $gray;
 }
@@ -11,7 +11,7 @@
 
 .catalog-item__title {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 
   font-size: 17px;
   line-height: 24px;
@@ -21,12 +21,11 @@
 
 .catalog-item__description {
   margin: 0;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
 
   font-size: 13px;
   line-height: 30px;
   color: $gray--dark;
-  font-weight: 700;
 }
 
 .catalog-item__price-wrapper {
@@ -38,7 +37,7 @@
 
 .catalog-item__price {
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   padding-top: 20px;
 
   font-size: 15px;
@@ -68,8 +67,8 @@
   }
 
   .catalog-item__title {
-    margin-top: 30px;
-    margin-bottom: 14px;
+    margin-top: 24px;
+    margin-bottom: 5px;
 
     font-size: 20px;
     line-height: 24px;

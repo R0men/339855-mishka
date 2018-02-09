@@ -1,4 +1,5 @@
 .index-main__wrapper {
+  margin-top: -20px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,8 +11,8 @@
 .index-main__title {
   width: 250px;
   margin: 0 auto;
-  padding-bottom: 126px;
-  padding-top: 80px;
+  padding-bottom: 122px;
+  padding-top: 90px;
 
   font-size: 27px;
   line-height: 30px;
@@ -26,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .index-main__wrapper {
     margin-top: -68px;
+    margin-bottom: 41px;
 
     border-top: 1px solid $border;
   }
@@ -33,10 +35,22 @@
   .index-main__title {
     width: 510px;
     padding-bottom: 385px;
-    padding-top: 170px;
+    padding-top: 152px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .index-main__zigzag-wrapper {
+    position: relative;
+    z-index: 10;
+
+    height: 12px;
+    margin-top: -12px;
+
+    background-image: url("../img/zigzag-line-white-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -44,16 +58,26 @@
 
 @media (min-width: $desktop-width) {
   .index-main__wrapper {
-    margin-top: -88px;
+    margin-top: -61px;
 
     border-top: none;
   }
 
   .index-main__title {
     width: 650px;
-    padding-bottom: 370px;
+    padding-top: 154px;
+    padding-bottom: 360px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .index-main__zigzag-wrapper {
+    height: 17px;
+    margin-top: -17px;
+
+    background-image: url("../img/zigzag-line-white-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }

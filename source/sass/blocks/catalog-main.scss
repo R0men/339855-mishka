@@ -1,6 +1,6 @@
 .catalog-main__title {
   margin: 0;
-  padding: 74px 0;
+  padding: 72px 0;
   margin-bottom: 30px;
 
   font-size: 27px;
@@ -18,12 +18,22 @@
   }
 
   .catalog-main__title {
-    margin-bottom: 84px;
-    padding-top: 110px;
-    padding-bottom: 84px;
+    margin-bottom: 0;
+    padding-top: 98px;
+    padding-bottom: 82px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .catalog-main__zigzag-wrapper {
+    height: 12px;
+    margin-top: -12px;
+    margin-bottom: 80px;
+
+    background-image: url("../img/zigzag-line-white-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -31,14 +41,23 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    margin-top: -88px;
+    margin-top: -61px;
   }
 
   .catalog-main__title {
-    margin-bottom: 132px;
     padding-bottom: 106px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .catalog-main__zigzag-wrapper {
+    height: 17px;
+    margin-top: -17px;
+    margin-bottom: 128px;
+
+    background-image: url("../img/zigzag-line-white-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }

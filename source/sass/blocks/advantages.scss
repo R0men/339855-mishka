@@ -5,6 +5,7 @@
 .advantages__title {
   margin: 0;
   margin-bottom: 4px;
+  padding-top: 30px;
 
   font-size: 25px;
   line-height: 30px;
@@ -21,13 +22,17 @@
   list-style: none;
 
   &:last-child {
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 }
 
 .advantages__item {
-  width: 255px;
-  padding-top: 90px;
+  width: 250px;
+  padding-top: 83px;
+}
+
+.advantages__br--tablet {
+  display: none;
 }
 
 /*Для планшетов*/
@@ -38,10 +43,12 @@
     max-width: 1050px;
 
     @include indent-tablet;
+    margin-bottom: 83px;
   }
 
   .advantages__title {
     margin-bottom: 0;
+    padding-top: 48px;
 
     font-size: 43px;
     line-height: 50px;
@@ -51,19 +58,34 @@
     display: flex;
     flex-wrap: wrap;
 
-
     font-size: 20px;
     line-height: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .advantages__item {
-    width: auto;
-    padding-top: 115px;
+    width: 300px;
+    padding-top: 112px;
     padding-right: 10%;
+
+    &:first-child {
+      padding-top: 103px;
+    }
   }
 
   .advantages__item-wrapper {
     width: 50%;
+  }
+
+  .advantages__br--mobile {
+    display: none;
+  }
+
+  .advantages__br--tablet {
+    display: block;
   }
 }
 
@@ -72,10 +94,15 @@
 @media (min-width: $desktop-width) {
   .advantages {
     @include indent-desktop;
+    margin-bottom: 89px;
   }
 
   .advantages__title {
     margin-left: 175px;
+    padding-top: 57px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .advantages__list {
