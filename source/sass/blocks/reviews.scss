@@ -73,6 +73,12 @@
     background-repeat: no-repeat;
     background-size: auto, 350px 457px;
     background-position: bottom, 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/zigzag-line-gray-tablet.png"), url("../img/review@2x.jpg");
+      background-size: auto, 350px 457px;
+      background-position: bottom, 0 0;
+    }
   }
 
   .reviews__wrapper {
@@ -145,6 +151,12 @@
     background-repeat: no-repeat;
     background-size: auto, 350px 457px;
     background-position: bottom, 50px 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/zigzag-line-gray-desktop.png"), url("../img/review@2x.jpg");
+      background-size: auto, 350px 457px;
+      background-position: bottom, 50px 0;
+    }
   }
 
   .reviews__title {
