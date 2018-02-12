@@ -13,7 +13,7 @@
   line-height: 19px;
   color: #000000;
 
-  &:hover svg path {
+  &:hover svg {
     fill: $green--hover;
   }
 
@@ -21,6 +21,10 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.copyright__link svg {
+  fill: $green;
 }
 
 .copyright__text {

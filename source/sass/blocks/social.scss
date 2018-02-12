@@ -23,7 +23,7 @@
 .social__link {
   display: flex;
 
-  &:hover svg path {
+  &:hover svg {
     fill: $green--hover;
   }
 
@@ -31,6 +31,10 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.social__link svg {
+  fill: $svg-footer;
 }
 
 /*Для планшетов*/

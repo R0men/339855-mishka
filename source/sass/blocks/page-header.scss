@@ -9,6 +9,17 @@
   border-bottom: 1px solid $border;
 }
 
+.page-header__logo[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
@@ -76,7 +87,8 @@
   }
 
   .page-header__logo-image {
-    padding-left: 55px;
+    width: 150px;
+    padding-left: 40px;
   }
 
   .page-header__delivery {

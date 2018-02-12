@@ -54,19 +54,6 @@
     font-size: 43px;
     line-height: 50px;
   }
-
-  .index-main__zigzag-wrapper {
-    position: relative;
-    z-index: 10;
-
-    height: 17px;
-    margin-top: -17px;
-
-    background-image: url("../img/zigzag-line-white-tablet.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
-  }
 }
 
 /*Для десктопов*/
@@ -96,15 +83,5 @@
 
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .index-main__zigzag-wrapper {
-    height: 22px;
-    margin-top: -22px;
-
-    background-image: url("../img/zigzag-line-white-desktop.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
   }
 }

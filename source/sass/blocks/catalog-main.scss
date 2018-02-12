@@ -18,22 +18,27 @@
   }
 
   .catalog-main__title {
+    position: relative;
+
     margin-bottom: 0;
     padding-top: 98px;
     padding-bottom: 82px;
 
     font-size: 43px;
     line-height: 50px;
-  }
 
-  .catalog-main__zigzag-wrapper {
-    height: 12px;
-    margin-top: -12px;
-    margin-bottom: 80px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 12px;
 
-    background-image: url("../img/zigzag-line-white-tablet.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -49,15 +54,9 @@
 
     font-size: 53px;
     line-height: 57px;
-  }
 
-  .catalog-main__zigzag-wrapper {
-    height: 17px;
-    margin-top: -17px;
-    margin-bottom: 128px;
-
-    background-image: url("../img/zigzag-line-white-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    &::after {
+      height: 18px;
+    }
   }
 }
