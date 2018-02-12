@@ -177,22 +177,22 @@
     padding-top: 74px;
     padding-bottom: 190px;
 
-    background-image: url("../img/zigzag-line-gray-desktop.png"), url("../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto, 350px 457px;
-    background-position: bottom, 50px 0;
+    background-size: 350px 457px;
+    background-position: 50px 0;
 
     &::after {
+      left: 50px;
+
       width: 1050px;
       height: 22px;
-
-      left: 50px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/zigzag-line-gray-desktop.png"), url("../img/review@2x.jpg");
-      background-size: auto, 350px 457px;
-      background-position: bottom, 50px 0;
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
+      background-position: 50px 0;
     }
   }
 
