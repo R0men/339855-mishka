@@ -1,10 +1,21 @@
 .weekly {
+  position: relative;
+
   @include mobile;
   padding-bottom: 40px;
 
-  background-image: url("../img/zigzag-line-gray-mobile.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .weekly__title-item {
@@ -97,7 +108,9 @@
     @include tablet;
     padding-bottom: 70px;
 
-    background-image: url("../img/zigzag-line-gray-tablet.png");
+    &::after {
+      height: 17px;
+    }
   }
 
   .weekly__title-wrapper {
@@ -185,7 +198,12 @@
     padding-top: 85px;
     padding-bottom: 95px;
 
-    background-image: url("../img/zigzag-line-gray-desktop.png");
+    &::after {
+      width: 1050px;
+      height: 22px;
+
+      left: 50px;
+    }
   }
 
   .weekly__title-wrapper {
