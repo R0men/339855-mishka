@@ -30,7 +30,6 @@
 }
 
 .main-nav__opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -50,7 +49,7 @@
   }
 
   &::after {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
   }
 }
 
