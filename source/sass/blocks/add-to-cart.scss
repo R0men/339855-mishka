@@ -1,4 +1,11 @@
 .add-to-cart {
+  position: fixed;
+  z-index: 30;
+  left: 50%;
+  top: 50%;
+
+  display: none;
+
   @include mobile;
   padding-bottom: 46px;
 
@@ -7,6 +14,8 @@
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  transform: translate(-50%, -50%);
 }
 
 .add-to-cart__title {
@@ -80,6 +89,10 @@
 
   background-color: $green;
   border: none;
+}
+
+.add-to-cart--show {
+  display: block;
 }
 
 /*Для планшетов*/

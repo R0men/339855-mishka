@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page-header">
+    <header class="page-header page-header--opened page-header--nojs">
       <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -71,11 +71,11 @@
               <legend class="form__field-title form__field-title--type">Тип</legend>
               <ul class="form__list">
                 <li class="form__option form__option--radio">
-                  <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="accessory-for-interior" id="filter-accessories">
+                  <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="accessory-for-interior" id="filter-accessories" checked>
                   <label class="form__label" for="filter-accessories">Аксессуар для интерьера</label>
                 </li>
                 <li class="form__option form__option--radio">
-                  <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="childrens-toy" id="filter-toy" checked>
+                  <input class="visually-hidden form__input form__input--radio" type="radio" name="type-group" value="childrens-toy" id="filter-toy">
                   <label class="form__label" for="filter-toy">Детская игрушка</label>
                 </li>
               </ul>
@@ -88,11 +88,11 @@
                 <legend class="form__field-title">Цвет</legend>
                 <ul class="form__list form__list--color">
                   <li class="form__option form__option--checkbox">
-                    <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="filter-white">
+                    <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="filter-white" checked>
                     <label class="form__label" for="filter-white">Белый</label>
                   </li>
                   <li class="form__option form__option--checkbox">
-                    <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray">
+                    <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray" checked>
                     <label class="form__label" for="filter-gray">Серый</label>
                   </li>
                   <li class="form__option form__option--checkbox">
@@ -210,5 +210,6 @@
     </footer>
 
     <script src="js/min.svg4everybody.js"></script>
+    <script src="js/form-script.js"></script>
   </body>
 </html>
