@@ -2,10 +2,6 @@
   @include mobile;
 }
 
-.svg svg {
-  background-color: none;
-}
-
 .form__field {
   @include marpad;
   margin-bottom: 41px;
@@ -35,11 +31,15 @@
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
+  margin-bottom: 0;
 }
 
 .form__field--info {
   margin-bottom: 3px;
+}
+
+.form__field--email {
+  margin-bottom: 30px;
 }
 
 .form__field-title {
@@ -308,17 +308,16 @@
   top: 32px;
 
   fill: rgba(0, 0, 0, 0.2);
-
-  &:hover,
-  &:focus,
-  &:active {
-    fill: $green;
-  }
 }
 
 .form__icon--mail {
   right: 4px;
-  top: 140px;
+}
+
+.form__input:hover + svg,
+.form__input:focus + svg,
+.form__input:active + svg {
+  fill: $green;
 }
 
 /*Для планшетов*/
@@ -365,9 +364,14 @@
   }
 
   .form__field--phone {
-    margin-bottom: 50px;
     padding-top: 68px;
-    padding-bottom: 50px;
+
+    background-color: $gray;
+  }
+
+  .form__field--email {
+    margin-bottom: 50px;
+    padding-bottom: 48px;
 
     background-color: $gray;
   }
@@ -399,7 +403,7 @@
   }
 
   .form__field-title--email {
-    top: 145px;
+    top: 0;
   }
 
   .form__list {
@@ -540,12 +544,12 @@
   }
 
   .form__icon {
-    top: 58px;
+    top: 62px;
     right: 77px;
   }
 
   .form__icon--mail {
-    top: 136px;
+    top: 0;
     right: 72px;
   }
 }
@@ -588,6 +592,7 @@
   .form__field--color,
   .form__field--name,
   .form__field--phone,
+  .form__field--email,
   .form__field--info {
     width: $desktop-width - 110px;
     margin-left: auto;
@@ -610,7 +615,7 @@
   }
 
   .form__field-title--email {
-    top: 145px;
+    top: 0;
   }
 
   .form__field-title--info {
@@ -654,7 +659,7 @@
 
   .form__input--tel {
     width: 682px;
-    margin-bottom: 43px;
+    margin-bottom: 35px;
     margin-left: 113px;
     padding-bottom: 15px;
   }
@@ -680,7 +685,7 @@
   }
 
   .form__icon--mail {
-    top: 138px;
+    top: 0;
     right: 233px;
   }
 }
