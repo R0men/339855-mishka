@@ -1,6 +1,7 @@
 var link = document.querySelector(".weekly__order");
 var modal = document.querySelector(".add-to-cart");
 var wrapper = document.querySelector(".modal-wrapper");
+var wrapperShow = document.querySelector(".modal-wrapper--show");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -15,6 +16,12 @@ window.addEventListener("keydown", function(evt) {
       wrapper.classList.remove("modal-wrapper--show");
     }
   }
+});
+
+wrapperShow.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modal.classList.remove("add-to-cart--show");
+  wrapper.classList.remove("modal-wrapper--show");
 });
 
 var pageHeader = document.querySelector(".page-header");

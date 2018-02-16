@@ -29,6 +29,11 @@
     display: flex;
     margin: auto 0;
 
+    & svg {
+      width: 102px;
+      height: 34px;
+    }
+
     &:hover svg {
       fill: $green--hover;
     }
