@@ -1,3 +1,4 @@
+/*Модальное окно*/
 var link = document.querySelector(".catalog-item__add");
 var modal = document.querySelector(".add-to-cart");
 var wrapper = document.querySelector(".modal-wrapper");
@@ -17,6 +18,13 @@ window.addEventListener("keydown", function(evt) {
   }
 });
 
+wrapper.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modal.classList.remove("add-to-cart--show");
+  wrapper.classList.remove("modal-wrapper--show");
+});
+
+/*Переключатель главного меню на мобильной версии*/
 var pageHeader = document.querySelector(".page-header");
 var toggle = document.querySelector(".main-nav__toggle");
 
