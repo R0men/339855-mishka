@@ -35,17 +35,23 @@
 }
 
 .advantages__item--flower {
+  width: 190px;
+
   background-image: url("../img/icon-feature-flower.svg");
   background-size: 32px 37px;
 }
 
 .advantages__item--money {
+  width: 220px;
+
   background-image: url("../img/icon-feature-money.svg");
   background-size: 47px 27px;
   background-position: 3px 27px;
 }
 
 .advantages__item--heart {
+  width: 200px;
+
   background-image: url("../img/icon-feature-heart.svg");
   background-size: 33px 28px;
   background-position: 10px 31px;
@@ -67,10 +73,6 @@
   background-image: url("../img/icon-feature-gift.svg");
   background-size: 33px 32px;
   background-position: 7px 31px;
-}
-
-.advantages__br--tablet {
-  display: none;
 }
 
 /*Для планшетов*/
@@ -117,14 +119,24 @@
     }
   }
 
+  .advantages__item--flower {
+    width: 34%;
+    padding-right: 16%;
+  }
+
   .advantages__item--money {
     order: 3;
+    width: 38%;
+    padding-right: 12%;
+
 
     background-position: 2px 58px;
   }
 
   .advantages__item--heart {
     order: 5;
+    width: 35%;
+    padding-right: 15%;
 
     background-position: 10px 61px;
   }
@@ -143,6 +155,8 @@
 
   .advantages__item--gift {
     order: 6;
+    width: 40%;
+    padding-right: 10%;
 
     background-position: 5px 58px;
   }
@@ -186,5 +200,25 @@
     &:nth-child(4) {
       width: 30%;
     }
+  }
+
+  .advantages__item--flower {
+    width: 25%;
+    padding-right: 15%;
+  }
+
+  .advantages__item--money {
+    width: 30%;
+    padding-right: 10%;
+  }
+
+  .advantages__item--gift {
+    width: 30%;
+    padding-right: 10%;
+  }
+
+  .advantages__item--heart {
+    width: 25%;
+    padding-right: 15%;
   }
 }

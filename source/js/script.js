@@ -1,7 +1,7 @@
+/*Модальное окно*/
 var link = document.querySelector(".weekly__order");
 var modal = document.querySelector(".add-to-cart");
 var wrapper = document.querySelector(".modal-wrapper");
-var wrapperShow = document.querySelector(".modal-wrapper--show");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -18,12 +18,13 @@ window.addEventListener("keydown", function(evt) {
   }
 });
 
-wrapperShow.addEventListener("click", function(evt) {
+wrapper.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("add-to-cart--show");
   wrapper.classList.remove("modal-wrapper--show");
 });
 
+/*Переключатель главного меню на мобильной версии*/
 var pageHeader = document.querySelector(".page-header");
 var toggle = document.querySelector(".main-nav__toggle");
 
@@ -38,3 +39,8 @@ toggle.addEventListener("click", function() {
     pageHeader.classList.remove("page-header--opened");
   }
 });
+
+/*Фоновая карта при выключенном js*/
+var iframe = document.querySelector(".contacts__iframe");
+
+iframe.classList.remove("contacts__iframe--nojs;")

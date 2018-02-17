@@ -55,13 +55,14 @@
 
 .reviews__controls {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .reviews__prev,
 .reviews__next {
   width: 50%;
-  min-height: 50px;
+  min-height: 40px;
+  padding: 11px 0;
 
   border: 1px solid $border;
 

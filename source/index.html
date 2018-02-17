@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <div class="modal-wrapper">
+    <div class="modal-wrapper"></div>
 
     <header class="page-header page-header--opened page-header--nojs">
       <a class="page-header__logo">
@@ -127,12 +129,12 @@
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--flower">Экологически<br> чистые материалы</li>
-          <li class="advantages__item advantages__item--money">Скандинавский стиль<br class="advantages__br--tablet"> по<br class="advantages__br--mobile"> российской цене</li>
-          <li class="advantages__item advantages__item--heart">Увеличивает лайки<br> на фотографиях</li>
+          <li class="advantages__item advantages__item--flower">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--money">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item advantages__item--heart">Увеличивает лайки на фотографиях</li>
           <li class="advantages__item advantages__item--clew">Связано вручную с любовью и умилением</li>
           <li class="advantages__item advantages__item--rocket">Поддержка отечественного производителя</li>
-          <li class="advantages__item advantages__item--gift">Поставляется в<br class="advantages__br--tablet"> подарочной упаковке</li>
+          <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -176,7 +178,9 @@
             </tr>
           </table>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6010499565464!2d30.3209804!3d59.9387619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1517411083937"></iframe>
+        <div class="contacts__iframe-wrapper">
+          <iframe class="contacts__iframe contacts__iframe--nojs" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6010499565464!2d30.3209804!3d59.9387619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1517411083937"></iframe>
+        </div>
         <a class="contacts__message button" href="feedback-form.html">Напишите нам</a>
       </section>
 
@@ -226,26 +230,28 @@
         </div>
       </div>
     </footer>
-  </div>
 
-  <section class="modal add-to-cart">
-    <h2 class="add-to-cart__title">Добавить в корзину</h2>
-    <p class="add-to-cart__description">Выберите размер:</p>
-    <ul class="add-to-cart__list">
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size-button button" type="button">S</button>
-      </li>
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size-button button" type="button">M</button>
-      </li>
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size-button button" type="button">L</button>
-      </li>
-    </ul>
-    <a class="add-to-cart__add button" href="#">Добавить</a>
-  </section>
+    <section class="modal add-to-cart">
+      <h2 class="add-to-cart__title">Добавить в корзину</h2>
+      <p class="add-to-cart__description">Выберите размер:</p>
+      <ul class="add-to-cart__list">
+        <li class="add-to-cart__item">
+          <input class="visually-hidden add-to-cart__input" type="radio" name="size-type" value="s" id="s-size">
+          <label class="add-to-cart__label" for="s-size">S</label>
+        </li>
+        <li class="add-to-cart__item">
+          <input class="visually-hidden add-to-cart__input" type="radio" name="size-type" value="m" id="m-size">
+          <label class="add-to-cart__label" for="m-size">M</label>
+        </li>
+        <li class="add-to-cart__item">
+          <input class="visually-hidden add-to-cart__input" type="radio" name="size-type" value="l" id="l-size">
+          <label class="add-to-cart__label" for="l-size">L</label>
+        </li>
+      </ul>
+      <button type="submit" class="add-to-cart__add button">Добавить</button>
+    </section>
 
-  <script src="js/min.svg4everybody.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/min.svg4everybody.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
