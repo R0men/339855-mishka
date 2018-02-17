@@ -1,6 +1,7 @@
 .social__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 260px;
   min-height: 80px;
 
@@ -12,7 +13,6 @@
 }
 
 .social__item {
-  margin: auto 0;
   margin-right: 41px;
 
   &:last-child {
@@ -41,13 +41,14 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    display: flex;
+    justify-content: center;
     width: 33.3%;
+    min-height: 143px;
   }
 
   .social__list {
     width: auto;
-    height: 100%;
-    margin: auto 0;
 
     border-bottom: none;
   }
