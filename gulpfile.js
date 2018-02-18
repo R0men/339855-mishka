@@ -117,8 +117,8 @@ gulp.task("build", function(done) {
     "style",
     "compress",
     "sprite",
-    "html",
     "minifyhtml",
+    "html",
     done
   );
 });
