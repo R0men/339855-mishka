@@ -75,9 +75,12 @@
 }
 
 .weekly__image {
+  width: 260px;
+  height: 315px;
+
   @include marpad;
-  margin-bottom: 25px;
-  /*Временно*/
+  margin-bottom: 23px;
+
   background-color: $gray;
 }
 

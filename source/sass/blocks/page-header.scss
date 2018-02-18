@@ -38,6 +38,18 @@
   color: $gray--dark;
 }
 
+@media (max-width: $tablet-width - 1px) {
+  .page-header--closed .main-nav__list,
+  .page-header--closed .cart-list {
+    display: none;
+  }
+
+  .page-header--nojs .main-nav__list,
+  .page-header--nojs .cart-list {
+    display: block;
+  }
+}
+
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {

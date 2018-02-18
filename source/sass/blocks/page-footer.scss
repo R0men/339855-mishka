@@ -20,14 +20,21 @@
   }
 
   .page-footer__logo {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 33.3%;
-    margin: auto 0;
+    min-height: 143px;
   }
 
   .page-footer__logo-link {
     display: flex;
-    margin: auto 0;
+    margin-bottom: 12px;
+
+    & svg {
+      width: 102px;
+      height: 34px;
+    }
 
     &:hover svg {
       fill: $green--hover;

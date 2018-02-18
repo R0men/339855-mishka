@@ -7,7 +7,7 @@
 
 .copyright__link {
   display: flex;
-  margin: auto 0;
+  align-items: center;
 
   font-size: 19px;
   line-height: 19px;
@@ -24,26 +24,28 @@
 }
 
 .copyright__link svg {
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-left: 8px;
   fill: $green;
 }
 
 .copyright__text {
   align-self: center;
-  padding-right: 30px;
+  padding-right: 14px;
+  padding-bottom: 10px;
 }
 
 /*Для планшетов*/
 
 @media (min-width: $tablet-width) {
   .copyright {
+    justify-content: flex-end;
     width: 33.3%;
+    min-height: 143px;
   }
 
   .copyright__text {
     padding-right: 20px;
-  }
-
-  .copyright__link {
-    margin-left: auto;
   }
 }
