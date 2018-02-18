@@ -35,7 +35,7 @@
 
 .reviews__text {
   @include marpad;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   color: $gray--dark;
 }
@@ -55,7 +55,7 @@
 
 .reviews__controls {
   display: flex;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .reviews__prev,

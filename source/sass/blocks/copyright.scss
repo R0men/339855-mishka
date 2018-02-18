@@ -24,12 +24,16 @@
 }
 
 .copyright__link svg {
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-left: 8px;
   fill: $green;
 }
 
 .copyright__text {
   align-self: center;
-  padding-right: 30px;
+  padding-right: 14px;
+  padding-bottom: 10px;
 }
 
 /*Для планшетов*/
