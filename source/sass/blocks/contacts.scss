@@ -83,11 +83,10 @@
   border: none;
 }
 
-.contacts__iframe--nojs {
-  display: none;
-}
-
 .contacts__message {
+  position: relative;
+  z-index: 20;
+
   display: block;
   width: 260px;
   margin: 0 auto;
