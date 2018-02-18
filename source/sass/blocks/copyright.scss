@@ -27,6 +27,7 @@
   display: inline-block;
   padding-bottom: 5px;
   padding-left: 8px;
+
   fill: $green;
 }
 
@@ -45,7 +46,14 @@
     min-height: 143px;
   }
 
+  .copyright__link svg {
+    padding-bottom: 0;
+
+    fill: $green;
+  }
+
   .copyright__text {
-    padding-right: 20px;
+    padding-right: 8px;
+    padding-bottom: 0;
   }
 }

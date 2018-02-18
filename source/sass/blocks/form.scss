@@ -39,6 +39,8 @@
 }
 
 .form__field--email {
+  position: relative;
+
   margin-bottom: 30px;
 }
 
@@ -361,7 +363,7 @@
 
   .form__field--name {
     margin-bottom: 48px;
-    padding-top: 68px;
+    padding-top: 65px;
   }
 
   .form__field--phone {
@@ -372,7 +374,7 @@
 
   .form__field--email {
     margin-bottom: 50px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
 
     background-color: $gray;
   }
@@ -404,7 +406,7 @@
   }
 
   .form__field-title--email {
-    top: 0;
+    top: 5px;
   }
 
   .form__list {
@@ -423,7 +425,7 @@
 
   .form__option--radio {
     margin-bottom: 57px;
-    padding-left: 84px;
+    padding-left: 86px;
   }
 
   .form__option--checkbox {
@@ -432,11 +434,12 @@
     padding-left: 77px;
 
     &:nth-child(2n) {
-      padding-left: 86px;
+      width: 160px;
+      padding-left: 94px;
     }
 
     &:last-child {
-      margin-bottom: 63px;
+      margin-bottom: 67px;
     }
   }
 
@@ -504,8 +507,9 @@
   .form__input--tel {
     width: 484px;
     margin-left: 165px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     padding-left: 18px;
+    padding-bottom: 18px;
     padding-top: 0;
 
     background-color: $gray;
@@ -615,8 +619,12 @@
     top: 0;
   }
 
+  .form__field-title--phone {
+    top: 68px;
+  }
+
   .form__field-title--email {
-    top: 0;
+    top: 10px;
   }
 
   .form__field-title--info {
@@ -662,7 +670,7 @@
     width: 682px;
     margin-bottom: 35px;
     margin-left: 113px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
   }
 
   .form__input--email {
@@ -673,11 +681,12 @@
   .form__input--textarea {
     width: 665px;
     margin-left: 113px;
+    margin-bottom: 44px;
   }
 
   .form__button-wrapper {
     width: 704px;
-    padding-left: 110px;
+    padding-left: 115px;
   }
 
   .form__icon {
