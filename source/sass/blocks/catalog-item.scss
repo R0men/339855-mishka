@@ -42,6 +42,7 @@
 
 .catalog-item__price-wrapper {
   display: flex;
+  justify-content: space-between;
   width: 205px;
 
   border-top: 1px solid $border;
@@ -58,8 +59,7 @@
 }
 
 .catalog-item__add {
-  margin: auto 0;
-  margin-left: auto;
+  align-self: center;
 
   & svg {
     fill: $svg-gray;
