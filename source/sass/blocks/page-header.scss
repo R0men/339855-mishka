@@ -74,6 +74,9 @@
   }
 
   .page-header__delivery {
+    position: relative;
+    z-index: 20;
+
     display: block;
     order: 4;
     margin-left: auto;
